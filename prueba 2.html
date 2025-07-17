@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    @font-face {
+      font-family: 'SpriteGraffiti';
+      src: url('SpriteGraffiti.otf') format('opentype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-image: url('dark.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'SpriteGraffiti', cursive;
+      font-size: 48px;
+      color: white;
+      text-align: center;
+      margin-top: 50px;
+      font-style: italic;
+      font-weight: bold;
+      position: relative;
+      animation: moverTexto 7s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .gif-derecha {
+      position: fixed;
+      top: 130px;
+      right: 170px;
+      width: 550px;
+      height: auto;
+      z-index: 1000;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    @keyframes moverTexto {
+      0%   { 
+        left: -100%; 
+        transform: translateX(0);
+      }
+      100% { 
+        left: 100%; 
+        transform: translateX(0);
+      }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+        margin-top: 30px;
+      }
+      
+      .gif-derecha {
+        width: 100px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+        margin-top: 20px;
+      }
+      
+      .gif-derecha {
+        width: 80px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+  <h1>FORMULARIO</h1>
+
+<a href="index.html">
+<img src="anterior.png" class="image-boton" alt="boton volver">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botón en la parte inferior derecha</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .image-boton {
+      position: fixed;
+      bottom: 50px;
+      right: 70px;
+      width:100px; /* Tamaño pequeño */
+      height: auto;
+      z-index: 1000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botón que redirige a otra página -->
+  <a href="prueba 1.html">
+    <img src="anterior.png" class="image-boton" alt="botón volver">
+  </a>
+
+ <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzvtiyCtNIrKKeLPToBVQAkFaol6NP_cI-CIaX3ivLNcMHdg/viewform?embedded=true" width="640" height="939" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe></center>
+
+ <!-- Botón para volver -->
+  <a href="index.html">
+    <img src="anterior.png" class="image-boton" alt="botón volver" />
+  </a>
+
+</body>
+</html>
+
+</html>

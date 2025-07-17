@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <style>
+    @font-face {
+      font-family: 'SpriteGraffiti';
+      src: url('SpriteGraffiti.otf') format('opentype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-image: url('dark.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'SpriteGraffiti', cursive;
+      font-size: 48px;
+      color: white;
+      text-align: center;
+      margin-top: 50px;
+      font-style: italic;
+      font-weight: bold;
+      position: relative;
+      animation: moverTexto 7s linear infinite;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .gif-derecha {
+      position: fixed;
+      top: 130px;
+      right: 170px;
+      width: 550px;
+      height: auto;
+      z-index: 1000;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    @keyframes moverTexto {
+      0%   { 
+        left: -100%; 
+        transform: translateX(0);
+      }
+      100% { 
+        left: 100%; 
+        transform: translateX(0);
+      }
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 36px;
+        margin-top: 30px;
+      }
+      
+      .gif-derecha {
+        width: 100px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+        margin-top: 20px;
+      }
+      
+      .gif-derecha {
+        width: 80px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="anime.gif" alt="GIF animado" class="gif-derecha">
+  <h1>HTML</h1>
+
+<a href="prueba 1.html">
+<img src="anterior.png" class="image-boton" alt="boton volver">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Botón en la parte inferior derecha</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    .image-boton {
+      position: fixed;
+      bottom: 50px;
+      right: 70px;
+      width:100px; /* Tamaño pequeño */
+      height: auto;
+      z-index: 1000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo - Tabla HTML</title>
+  <style>
+    /* Fuente graffiti personalizada */
+    @font-face {
+      font-family: 'GraffitiFont';
+      src: url('SpriteGraffiti.otf') format('opentype');
+    }
+
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'GraffitiFont', cursive;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 2em;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 400px auto;
+      background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.08));
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      overflow: hidden;
+      backdrop-filter: blur(4px);
+    }
+
+    td {
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      color: white;
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #444;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    tr:hover td {
+      background-color: rgba(255, 255, 255, 0.1);
+      transform: scale(1.02);
+    }
+
+    tr:nth-child(even) td {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td>INDUCCIÓN</td>
+      <td>TIC</td>
+      <td>MATEMÁTICAS</td>
+      <td>FÍSICA</td>
+    </tr>
+    <tr>
+      <td>SENA</td>
+      <td>WORD</td>
+      <td>FRACCIONES</td>
+      <td>MRU</td>
+    </tr>
+    <tr>
+      <td>FORMACIÓN PROFESIONAL</td>
+      <td>EXCEL</td>
+      <td>DECIMALES</td>
+      <td>MRUA</td>
+    </tr>
+    <tr>
+      <td>INTEGRAL</td>
+      <td>ACCESS</td>
+      <td>PORCENTAJES</td>
+      <td>OHM</td>
+    </tr>
+  </table>
+
+  <!-- Botón que redirige a otra página -->
+  <a href="prueba 1.html">
+    <img src="anterior.png" class="image-boton" alt="botón volver">
+  </a>
+
+</body>
+</html>
